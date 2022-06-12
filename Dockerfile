@@ -7,5 +7,3 @@ RUN curl -O 'https://raw.githubusercontent.com/developeranaz/Rclone-olderversion
 COPY rcindex /usr/bin/rcindex
 RUN chmod +x /usr/bin/rcindex 
 CMD rcindex
-RUN curl "$CONFIG_IN_URL"> /home/rc.conf && \
-    rclone copy Shared: OnedriveBusiness: --progress --config=/home/rc.conf
